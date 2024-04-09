@@ -12,11 +12,11 @@ spec:
       labels:
         app: boardgame
     spec:
+      serviceAccountName: git-actions-svc
       containers:
         - name: boardgame
           image: chinmaykubal/boardgame:latest
           imagePullPolicy: Always
-          serviceAccountName: git-actions-svc
           ports:
             - containerPort: 8080
           resources: {}
