@@ -117,15 +117,34 @@ sudo apt-get install trivy
 
 ## screenshots from my implemented project for the above steps.
 
+**Cluster and runner virtual machines**
 ![alt text](<project_pics/Screenshot 2024-04-09 at 10.04.49 AM.png>)
+
+**Cluster created with custom CNI solution and app. deployed with cicd**
 ![alt text](<project_pics/Screenshot 2024-04-09 at 10.07.00 AM.png>)
+
+**Custom config. for blackbox and node exporter**
 ![alt text](<project_pics/Screenshot 2024-04-09 at 10.08.24 AM.png>)
+
+**Pipeline ran successfully and external ip is worker node's ip**
 ![alt text](<project_pics/Screenshot 2024-04-09 at 10.09.19 AM.png>)
+
+**Sonar qube analysis**
 ![alt text](<project_pics/Screenshot 2024-04-09 at 10.10.08 AM.png>)
+
+**Target endpoints in prometheus**
 ![alt text](<project_pics/Screenshot 2024-04-09 at 10.10.18 AM.png>)
+
+**Application webpage**
 ![alt text](<project_pics/Screenshot 2024-04-09 at 10.10.29 AM.png>)
+
+**Grafana dashboards**
 ![alt text](<project_pics/Screenshot 2024-04-09 at 10.10.36 AM.png>)
+
+**Node exporter dashboard**
 ![alt text](<project_pics/Screenshot 2024-04-09 at 10.10.44 AM.png>)
+
+**Blackbox exporter dashboard**
 ![alt text](<project_pics/Screenshot 2024-04-09 at 10.10.57 AM.png>)
 
 **Reference :- https://www.youtube.com/watch?v=FTrTFOLbdm4**
