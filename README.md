@@ -65,13 +65,19 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 **sudo kubeadm init --pod-network-cidr=192.168.0.0/16 —> this give error for using unix:///var/run/cri-dockerd.sock so run the below command —cri-socket... got with —help command**
 
-`sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --cri-socket=unix:///var/run/cri-dockerd.sock`
+```
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --cri-socket=unix:///var/run/cri-dockerd.sock
+```
 
 **follow the interactive steps then the below command**
 
-`curl https://raw.githubusercontent.com/projectcalico/calico/v3.27.3/manifests/calico.yaml -O`
+```
+curl https://raw.githubusercontent.com/projectcalico/calico/v3.27.3/manifests/calico.yaml -O
+```
 
-'kubectl apply -f calico.yaml`
+```
+kubectl apply -f calico.yaml
+```
 
 **after createing the cluster utilize the "sa_role_role_binding.yaml" file. And deployment-service.yaml file will get utilized in the pipeline.**
 
@@ -81,11 +87,15 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 ## 5.1 Install the Docker from the step 1 on to the Runner then install the sonarqube server
 
-`docker run -d --name sonar -p 9000:9000 sonarqube:lts-community`
+```
+docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
+```
 
 ## 5.2 Install maven
 
-`sudo apt install maven -y`
+```
+sudo apt install maven -y
+```
 
 ## 5.3 Install trivy
 
@@ -101,15 +111,21 @@ sudo apt-get install trivy
 
 ## 5.4 Install prometheus ("pgrep prometheus" to get the id and then kill the process, then start it again when adding and configuring the exporters) (edit the prometheus yaml file after installing the exporters)
 
-`wget https://github.com/prometheus/prometheus/releases/download/v2.51.1/prometheus-2.51.1.linux-amd64.tar.gz`
+```
+wget https://github.com/prometheus/prometheus/releases/download/v2.51.1/prometheus-2.51.1.linux-amd64.tar.gz
+```
 
 ## 5.5 Install blackbox_exporter
 
-`wget https://github.com/prometheus/blackbox_exporter/releases/download/v0.24.0/blackbox_exporter-0.24.0.linux-amd64.tar.gz`
+```
+wget https://github.com/prometheus/blackbox_exporter/releases/download/v0.24.0/blackbox_exporter-0.24.0.linux-amd64.tar.gz
+```
 
 ## 5.6 Install node_exporter
 
-`wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz`
+```
+wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
+```
 
 ## 5.7 Install Grafana (After installing the Grafana it generates the command to run the grafana, so utilze that command, After adding the data source (i.e prometheus), add the 2 dashboards for correspondig exporters to get the insights )
 
