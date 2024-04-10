@@ -117,4 +117,15 @@ sudo apt-get install trivy
 
 ## screenshots from my implemented project for the above steps.
 
+![alt text](<project_pics/Screenshot 2024-04-09 at 10.04.49 AM.png>)
+![alt text](<project_pics/Screenshot 2024-04-09 at 10.07.00 AM.png>)
+![alt text](<project_pics/Screenshot 2024-04-09 at 10.08.24 AM.png>)
+![alt text](<project_pics/Screenshot 2024-04-09 at 10.09.19 AM.png>)
+![alt text](<project_pics/Screenshot 2024-04-09 at 10.10.08 AM.png>)
+![alt text](<project_pics/Screenshot 2024-04-09 at 10.10.18 AM.png>)
+![alt text](<project_pics/Screenshot 2024-04-09 at 10.10.29 AM.png>)
+![alt text](<project_pics/Screenshot 2024-04-09 at 10.10.36 AM.png>)
+![alt text](<project_pics/Screenshot 2024-04-09 at 10.10.44 AM.png>)
+![alt text](<project_pics/Screenshot 2024-04-09 at 10.10.57 AM.png>)
+
 **Reference :- https://www.youtube.com/watch?v=FTrTFOLbdm4**
