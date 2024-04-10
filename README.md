@@ -73,11 +73,11 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 'kubectl apply -f calico.yaml`
 
-## after createing the cluster utilize the "sa_role_role_binding.yaml" file. And deployment-service.yaml file will get utilized in the pipeline.
+**after createing the cluster utilize the "sa_role_role_binding.yaml" file. And deployment-service.yaml file will get utilized in the pipeline.**
 
-## while adding the worker node it also requires --cri-socket=unix:///var/run/cri-dockerd.sock with the generated token
+**while adding the worker node it also requires --cri-socket=unix:///var/run/cri-dockerd.sock with the generated token**
 
-# 5. Create a custom runner for GitHub Actions (get the commands and from github itself and run the commands on the ec2 instace to make it runner) and on runner Install the below packages
+## 5. Create a custom runner for GitHub Actions (get the commands and from github itself and run the commands on the ec2 instace to make it runner) and on runner Install the below packages
 
 ## 5.1 Install the Docker from the step 1 on to the Runner then install the sonarqube server
 
@@ -115,6 +115,6 @@ sudo apt-get install trivy
 
 **https://grafana.com/grafana/download**
 
-# screenshots from my implemented project for the above steps.
+## screenshots from my implemented project for the above steps.
 
 **Reference :- https://www.youtube.com/watch?v=FTrTFOLbdm4**
