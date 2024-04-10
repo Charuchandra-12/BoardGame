@@ -1,3 +1,4 @@
+# create seperate yaml files and apply them in the created cluster manually.
 apiVersion: v1
 kind: ServiceAccount
 metadata:
