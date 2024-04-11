@@ -55,7 +55,9 @@ sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 ```
 
-## 4. Setup Master Node with Custom Networking solution (Only On Master Node and utilize the genereated token in worker node)
+## 4. Setup Master Node with Custom Networking solution
+
+**(Only On Master Node and utilize the genereated token in worker node)**
 
 **CNI**
 
@@ -83,9 +85,11 @@ kubectl apply -f calico.yaml
 
 **while adding the worker node it also requires --cri-socket=unix:///var/run/cri-dockerd.sock with the generated token**
 
-## 5. Create a custom runner for GitHub Actions (get the commands and from github itself and run the commands on the ec2 instace to make it runner) and on runner Install the below packages
+## 5. Create a custom runner for GitHub Actions
 
-## 5.1 Install the Docker from the step 1 on to the Runner then install the sonarqube server
+**(get the commands and from github itself and run the commands on the ec2 instace to make it runner) and on runner Install the below packages**
+
+## 5.1 Install the Docker (step 1) and sonarqube server
 
 ```
 docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
@@ -109,7 +113,10 @@ sudo apt-get install trivy
 
 **untar command:- "tar -xvf tarfile" and run the corresponding executable script with ./ and & to run them in the background for the below packages except for the grafana.**
 
-## 5.4 Install prometheus ("pgrep prometheus" to get the id and then kill the process, then start it again when adding and configuring the exporters) (edit the prometheus yaml file after installing the exporters)
+## 5.4 Install prometheus
+
+**("pgrep prometheus" to get the id and then kill the process, then start it again when adding and configuring the exporters) (edit the prometheus yaml file after installing the exporters)
+**
 
 ```
 wget https://github.com/prometheus/prometheus/releases/download/v2.51.1/prometheus-2.51.1.linux-amd64.tar.gz
@@ -127,7 +134,9 @@ wget https://github.com/prometheus/blackbox_exporter/releases/download/v0.24.0/b
 wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
 ```
 
-## 5.7 Install Grafana (After installing the Grafana it generates the command to run the grafana, so utilze that command, After adding the data source (i.e prometheus), add the 2 dashboards for correspondig exporters to get the insights )
+## 5.7 Install Grafana
+
+**(After installing the Grafana it generates the command to run the grafana, so utilze that command, After adding the data source (i.e prometheus), add the 2 dashboards for correspondig exporters to get the insights )**
 
 **https://grafana.com/grafana/download**
 
