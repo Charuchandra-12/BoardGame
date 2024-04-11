@@ -73,6 +73,8 @@ sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --cri-socket=unix:///var/run/
 
 **follow the interactive steps then the below command**
 
+**while adding the worker node it also requires --cri-socket=unix:///var/run/cri-dockerd.sock with the generated token**
+
 ```
 curl https://raw.githubusercontent.com/projectcalico/calico/v3.27.3/manifests/calico.yaml -O
 ```
@@ -82,8 +84,6 @@ kubectl apply -f calico.yaml
 ```
 
 **after createing the cluster utilize the "sa_role_role_binding.yaml" file. And deployment-service.yaml file will get utilized in the pipeline.**
-
-**while adding the worker node it also requires --cri-socket=unix:///var/run/cri-dockerd.sock with the generated token**
 
 ## 5. Create a custom runner for GitHub Actions
 
